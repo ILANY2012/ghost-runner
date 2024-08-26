@@ -66,7 +66,10 @@ function draw(){
   
   }
     
-  ghost.collide(climberGroup)
+      
+  if(climberGroup.isTouching(ghost)){
+    ghost.velocityY = 0;
+  }
 
   ghost.velocityY+=0.5
   spawnClimbingThingies()

@@ -35,7 +35,7 @@ function setup(){
 function draw(){
   background("black");
   drawSprites();
-  spookySound.play();
+  //spookySound.play();
  // spookySound.setVolume(0.005)
   
   if(tower.y>=450){
